@@ -1,0 +1,19 @@
+# Requirements for Project1
+# This file will be updated as dependencies are added to the project.
+
+# System Dependencies
+# Install with: sudo apt install -y inotify-tools
+inotify-tools    # For automatic file monitoring and backup triggering
+
+# VirtualBox Kubernetes Cluster
+# 3 VMs created with recommended Kubernetes specifications:
+# - kubemaster: 4GB RAM, 2 CPUs, 25GB disk, Ubuntu 64-bit
+# - kubenode01: 4GB RAM, 2 CPUs, 25GB disk, Ubuntu 64-bit  
+# - kubenode02: 4GB RAM, 2 CPUs, 25GB disk, Ubuntu 64-bit
+# All VMs configured with bridged networking for cluster communication
+# Ubuntu 24.04.2 Server ISO attached to all VMs for installation
+
+# Required ISO Files
+# ISO files are key items for this project. Download and store them in ~/Downloads or another specified location.
+# - Ubuntu 24.04 Server (CLI) ISO: https://releases.ubuntu.com/24.04/ubuntu-24.04-live-server-amd64.iso
+# Add other required ISOs here as needed. 

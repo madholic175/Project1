@@ -1,0 +1,35 @@
+# EXAMPLE SERVER CONFIGURATION
+# Kubernetes Cluster Server Configuration Template
+
+## Server Details:
+- master-node: hostname=k8s-master, username=k8s-admin, password=YourPassword123
+- worker-node1: hostname=k8s-worker1, username=k8s-admin, password=YourPassword123  
+- worker-node2: hostname=k8s-worker2, username=k8s-admin, password=YourPassword123
+
+## VM Specifications:
+- All VMs: 4GB RAM, 2 CPUs, 25GB disk
+- OS: Ubuntu 24.04.2 Server (minimal installation)
+- Network: NAT + Host-only adapter for cluster communication
+
+## Installation Notes:
+1. Use same username on all nodes for consistency
+2. Enable SSH during installation
+3. Install minimal server (no GUI)
+4. Configure network interfaces during installation
+5. Enable automatic security updates
+
+## SSH Access (Example):
+- master-node: ssh -p 2222 k8s-admin@localhost
+- worker-node1: ssh -p 2223 k8s-admin@localhost
+- worker-node2: ssh -p 2224 k8s-admin@localhost
+
+## Network Planning (example IPs):
+- k8s-master: 10.0.2.15/24 (NAT), 192.168.56.100/24 (Host-only)
+- k8s-worker1: 10.10.10.2/24 (NAT), 192.168.56.101/24 (Host-only)
+- k8s-worker2: 10.0.2.15/24 (NAT), 192.168.56.102/24 (Host-only)
+(Adjust based on your network setup)
+
+## Notes:
+- Replace example values with your actual configuration
+- Keep the actual config file (.gitignored) separate from this example
+- This template shows the structure needed for a 3-node Kubernetes cluster 

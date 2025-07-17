@@ -1,0 +1,3 @@
+# This directory contains daily full backups when the system is running
+# Files are automatically managed by backup_project.sh with 7-day retention
+# Actual .tar.gz files are excluded from git for privacy 
